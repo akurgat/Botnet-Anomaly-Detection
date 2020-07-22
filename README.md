@@ -86,21 +86,21 @@ The data was then scaled and decomposed using Principle Component Analysis with 
 
 This also unlocked a number of unique and distinctive characteristics between the values in the botnet and normal dataset as shown below.
 
-![](RackMultipart20200722-4-2fhzsr_html_eacd3c709bffeaa8.png)
+![](RackMultipart20200722-4-ohvzik_html_eacd3c709bffeaa8.png)
 
 A common trend in the analysis observed was that the values across the 93 features in the botnet dataset where highly correlated and showed a consistent behaviour pattern within them as shown in the above and below graphs.
 
-![](RackMultipart20200722-4-2fhzsr_html_a7c4db2fe9e2e2b.png)
+![](RackMultipart20200722-4-ohvzik_html_a7c4db2fe9e2e2b.png)
 
-![](RackMultipart20200722-4-2fhzsr_html_baf9bb2cd83534f2.png)
+![](RackMultipart20200722-4-ohvzik_html_baf9bb2cd83534f2.png)
 
 However, this was not always consistent when certain components where paired together but the botnet pattern where observed to be significantly distinctive from those exhibited by normal network traffic.
 
-![](RackMultipart20200722-4-2fhzsr_html_3a8066eeeeb83f85.png)
+![](RackMultipart20200722-4-ohvzik_html_3a8066eeeeb83f85.png)
 
-![](RackMultipart20200722-4-2fhzsr_html_5bd499a2ed799fd3.png)
+![](RackMultipart20200722-4-ohvzik_html_5bd499a2ed799fd3.png)
 
-![](RackMultipart20200722-4-2fhzsr_html_2049ef24d59cf3af.png)
+![](RackMultipart20200722-4-ohvzik_html_2049ef24d59cf3af.png)
 
 The column &#39;Data&#39; was added to both the botnet and normal dataset labelling each observation &#39;Botnet&#39; and &#39;Normal&#39; respectively. At this point, both datasets where then concatenated. Finally, the labels in the &#39;Data&#39; column were label encoded to 0 and 1 representing &#39;Normal&#39; and &#39;Botnet&#39; respectively.
 
@@ -108,14 +108,13 @@ The column &#39;Data&#39; was added to both the botnet and normal dataset labell
 
 As a result of the decomposition analysis leading to the distinctive parameters between the botnet and normal network traffic generated above, a complex model was not required. Therefore, the model used was a Multi-Layer Perception binary classifier neural network with the structure demonstrated by the graph below.
 
-![](RackMultipart20200722-4-2fhzsr_html_6afcfd3eb9702186.gif)
+![](RackMultipart20200722-4-ohvzik_html_6afcfd3eb9702186.gif)
 
 ## Model Testing and Performance Analysis.
 
 The model gave a general minimum accuracy of 99 % and a maximum accuracy of 99.94%. The model was also tested on several accuracy parameters as well as on different sets of data marked as train and test. The results obtained are as follows:
 
-|
- | **Train** | **Test** |
+| **Metrics:** | **Train:** | **Test:** |
 | --- | --- | --- |
 | **Precision** | 99 % | 99 % |
 | **Recall** | 99 % | 99 % |
@@ -123,13 +122,13 @@ The model gave a general minimum accuracy of 99 % and a maximum accuracy of 99.9
 
 In order to demonstrate the models performance and to countercheck the mentioned accuracy levels above, a confusion matrix was used to identify how well the model was able to perform its prediction given different datasets. This resulted to the following outcomes:
 
-![](RackMultipart20200722-4-2fhzsr_html_395b5d884300507d.gif)
+![](RackMultipart20200722-4-ohvzik_html_395b5d884300507d.gif)
 
-![](RackMultipart20200722-4-2fhzsr_html_a0d81fbc0cd8b115.gif)
+![](RackMultipart20200722-4-ohvzik_html_a0d81fbc0cd8b115.gif)
 
-![](RackMultipart20200722-4-2fhzsr_html_10c63bc47dcac9b0.gif)
+![](RackMultipart20200722-4-ohvzik_html_10c63bc47dcac9b0.gif)
 
-![](RackMultipart20200722-4-2fhzsr_html_a2b20468c48b1a39.gif)
+![](RackMultipart20200722-4-ohvzik_html_a2b20468c48b1a39.gif)
 
 As observed above, the model was not only able to perform well when both the botnet and normal datasets where combined but also when the model was required to make a distinction when presented with either the isolated botnet or normal datasets.
 
@@ -139,7 +138,7 @@ In conclusion, the model demonstrated that it was able to generalize on the patt
 
 The app runs on a Command Line or Terminal interface. It is executed as such in the example below:
 
-![](RackMultipart20200722-4-2fhzsr_html_c26724ea02538325.png)
+![](RackMultipart20200722-4-ohvzik_html_c26724ea02538325.png)
 
 The execution command includes:
 
@@ -154,7 +153,7 @@ The execution command includes:
 
 Each of the mentioned elements in the command mentioned above must be declared for the application to run as expected in the order mentioned. The application takes in a csv file with the statistically analysed TCP/UDP conversations in a pcap file using Wireshark. The app analyses the data through all the data analysis steps discussed and feeds the parameters to the model in order to identify any suspected botnets. The app then filters any predicted botnets from the data so as to identify only the unique instances of the suspected botnets as well as the targeted IP address and produces its results in the following as shown below:
 
-![](RackMultipart20200722-4-2fhzsr_html_6976c18a6c3932af.png)
+![](RackMultipart20200722-4-ohvzik_html_6976c18a6c3932af.png)
 
 In addition, the app also plots the following parameters and displays 6 scatter graphs in to visualize the predictions:
 
@@ -167,11 +166,11 @@ In addition, the app also plots the following parameters and displays 6 scatter 
 
 The following demonstrates examples of the plots from the app:
 
-![](RackMultipart20200722-4-2fhzsr_html_880e9e8c771f093f.png)
+![](RackMultipart20200722-4-ohvzik_html_880e9e8c771f093f.png)
 
-![](RackMultipart20200722-4-2fhzsr_html_aa5d2faf3dd676d9.png)
+![](RackMultipart20200722-4-ohvzik_html_aa5d2faf3dd676d9.png)
 
-![](RackMultipart20200722-4-2fhzsr_html_5a6a932ad78dea5.png)
+![](RackMultipart20200722-4-ohvzik_html_5a6a932ad78dea5.png)
 
 ## Drawbacks.
 
