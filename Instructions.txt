@@ -1,0 +1,16 @@
+Readme
+The app has been designed to run on a command line interface (CMD, PowerShell, Terminal) within the app directory.
+
+Step 1:
+Ensure you have the following installed on the local machine:
+1. Python version 3.7 and above.
+
+Step 2:
+Open CMD or Terminal on in the app folder and run the following command:
+* pip install –r requirements.txt
+
+Step 3:
+Run the following command on CMD or Terminal on in the app folder to test the app:
+* python botnet.py --file sample_data/network_traffic.csv
+
+Refer back to the documentation to see how to analyse TCP/UDP patterns.
