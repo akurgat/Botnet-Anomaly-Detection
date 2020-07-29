@@ -7,10 +7,10 @@ Ensure you have the following installed on the local machine:
 
 Step 2:
 Open CMD or Terminal in the app folder and run the following command to install all the required libraries locally:
-* pip install –r requirements.txt
+* pip install ï¿½r requirements.txt
 
 Step 3:
 Run the following command on CMD or Terminal on in the app folder to test the app:
-* python botnet.py --file sample_data/network_traffic.csv
+* python botnet.py --file sample_data/network_traffic.csv (use python3 if running on Linux)
 
 Refer back to the documentation to see how to analyse TCP/UDP patterns.
