@@ -6,7 +6,7 @@ Ensure you have the following installed on the local machine:
 1. Python version 3.7 and above.
 
 Step 2:
-Open CMD or Terminal on in the app folder and run the following command:
+Open CMD or Terminal in the app folder and run the following command to install all the required libraries locally:
 * pip install –r requirements.txt
 
 Step 3:
