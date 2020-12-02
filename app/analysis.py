@@ -21,3 +21,5 @@ def data_stats_processing(data, columns):
         
     data.replace([-np.inf, np.inf, np.nan], 0, inplace = True) #impute all nan and infinite values with 0
     return data #return the dataframe
+
+    
