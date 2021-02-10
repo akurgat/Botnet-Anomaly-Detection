@@ -3,7 +3,7 @@
 
 ## The Data.
 
-The data was generated from an experiment conducted by the Canadian Institute for Cybersecurity in the University of New Brunswick in 2017. The experiment involved connecting multiple end-user virtual machines to a single DNS server via a firewall. One section of the virtual machines where each were actively running one distinct and known desktop user application and web service on Windows 7. The applications included the following:
+The data was generated from an experiment conducted by the Canadian Institute for Cybersecurity in the University of New Brunswick in 2017. The experiment involved connecting multiple end-user virtual machines to a single DNS server via a firewall. One section of the virtual machines had each VM actively running one distinct and known desktop user application and web service on Windows 7. The applications included the following:
 
 - Dropbox
 - Avast
