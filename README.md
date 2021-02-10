@@ -90,7 +90,7 @@ A common trend in the analysis observed was that the values across the 93 featur
 
 However, this was not always consistent when certain components where paired together but the botnet pattern where observed to be significantly distinctive from those exhibited by normal network traffic.
 
-The column &#39;Data&#39; was added to both the botnet and normal dataset labelling each observation &#39;Botnet&#39; and &#39;Normal&#39; respectively. At this point, both datasets where then concatenated. Finally, the labels in the &#39;Data&#39; column were label encoded to 0 and 1 representing &#39;Normal&#39; and &#39;Botnet&#39; respectively.
+The column &#39;Data&#39; was added to both the botnet and normal dataset labelling each observation &#39;Botnet&#39; and &#39;Normal&#39; respectively. At this point, both datasets were then concatenated. Finally, the labels in the &#39;Data&#39; column were label encoded to 0 and 1 representing &#39;Normal&#39; and &#39;Botnet&#39; respectively.
 
 ## The Model.
 
