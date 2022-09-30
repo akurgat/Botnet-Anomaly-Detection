@@ -1,6 +1,6 @@
 astunparse==1.6.3
 h5py==2.10.0
-joblib==0.16.0
+joblib==1.2.0
 Keras==2.4.3
 matplotlib==3.3.1
 numpy==1.21
